@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 30px 16px;
+    background: #f2f5f9;
+    color: #273444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 28px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #294e75;
+}
+
+.page-links {
+    margin: 18px 0;
+}
+
+.page-links a {
+    margin-right: 12px;
+}
+
+.task-item {
+    margin: 10px 0;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px solid #e1e7ef;
+    border-radius: 6px;
+}
+
+.task-title {
+    overflow-wrap: anywhere;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-actions form {
+    margin: 0;
+}
+
+a {
+    color: #2869a6;
+}
+
+button,
+.button {
+    padding: 9px 13px;
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background: #3478b8;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+    background: #245d93;
+}
+
+.button-light {
+    color: #294e75;
+    background: #e7eef6;
+}
+
+.button-light:hover {
+    color: #294e75;
+    background: #d6e2ef;
+}
+
+.button-delete {
+    background: #bd5555;
+}
+
+.button-delete:hover {
+    background: #983c3c;
+}
+
+.form-field {
+    margin: 16px 0;
+}
+
+.form-field label {
+    margin-bottom: 6px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.form-field input:focus {
+    border-color: #3478b8;
+    outline: 2px solid #d6e9fa;
+}
+
+.form-actions {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.error-list {
+    padding: 12px 16px 12px 34px;
+    color: #8c3030;
+    background: #fff0f0;
+    border: 1px solid #efcccc;
+    border-radius: 5px;
+}
+
+.empty-message {
+    padding: 18px;
+    color: #617184;
+    background: #f8fafc;
+    border-radius: 5px;
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        margin: 8px auto;
+        padding: 20px 16px;
+    }
+
+    .task-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-actions {
+        width: 100%;
+    }
+}
